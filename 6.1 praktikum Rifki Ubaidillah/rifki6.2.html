@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATIKUM 6.2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        .container-utama{
+            width: 1000px;
+            height: 600px;
+            margin: 120px auto;
+           border: 1px solid black;
+            display: flex;
+
+        }
+        .Nav{
+            background-color: rgb(255, 78, 187);
+            font-size: 30px;
+            font-weight: bold;
+            flex: 1;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            flex: 5 ;
+            
+            
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            order: 2;
+            justify-content: space-around;
+            
+
+        }
+        .Header{
+            background-color: orange;
+            order: 1;
+            font-size: 30px;
+            font-weight: bold;
+            flex: 2;
+            /* height: 10%; */
+            
+            
+        }
+        .Footer{
+            background-color:  orange;
+            /* height: 10%; */
+            order: 3;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            flex: 2;
+        }
+        .Article{
+            background-color: whitesmoke;
+            font-size: 30px;
+            font-weight: bold;
+            flex: 2;
+        }
+        .Aside{
+            background-color: blue;
+            font-size: 30px;
+            font-weight: bold;
+            flex: 1;
+        }
+
+        .main{
+            display: flex;
+            flex-direction: row;
+            height: 180px;
+            order: 2;
+            justify-content: space-around;
+            flex: 8;
+            
+            
+        }
+    </style>
+</head>
+<body>
+<div class="container-utama">
+
+    <div class="Nav">Nav</div>
+
+    <div class="container">
+        <div class="Header">Header</div>
+        <div class="Footer">Footer</div>
+        <div class="main">
+            <div class="Article">Article</div>
+            <div class="Aside">Aside</div>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>
